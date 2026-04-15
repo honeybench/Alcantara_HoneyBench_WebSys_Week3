@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Honey Bench Alcantara</title> 
+    <style>
+        * { box-sizing: border-box; }
+
+        body { 
+            background-color: #F9F9F9; 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            line-height: 1.8; 
+        }
+
+        header { 
+            background-color: #FFB7C5; 
+            color: #fff; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 8px solid #E1AD01; 
+        }
+
+        nav { 
+            background-color: #E1AD01; 
+            padding: 20px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav ul { list-style-type: none; padding: 0; margin: 0; }
+        nav ul li { display: inline; margin: 0 15px; }
+
+        /* --- ANIMATED BUTTONS --- */
+        nav a { 
+            text-decoration: none; 
+            color: #fff; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            display: inline-block;
+            /* Transition makes the hover smooth */
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+
+        nav a:hover { 
+            background-color: #FFB7C5; 
+            color: #fff;
+            /* Adds a slight grow effect */
+            transform: scale(1.1); 
+            box-shadow: 0 4px 15px rgba(255, 183, 197, 0.4);
+        }
+
+        /* Shows which page you are currently on */
+        .active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid #fff;
+        }
+
+        section { 
+            max-width: 900px; 
+            margin: 50px auto; 
+            padding: 50px; 
+            background: white; 
+            border-radius: 20px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .profile-img { 
+            border: 8px solid #FFB7C5; 
+            border-radius: 50%; 
+            display: block; 
+            margin: 0 auto 40px auto; 
+            width: 200px; 
+            transition: transform 0.5s ease;
+        }
+
+        .profile-img:hover { transform: rotate(5deg); }
+
+        .skills-grid { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 25px;
+        }
+
+        .skill-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #FFF5F6;
+            border-radius: 12px;
+            border: 1px solid #FFDBE2;
+        }
+
+        footer { text-align: center; padding: 40px; background-color: #FEDCDC; color: #666; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Honey Bench Alcantara</h1> 
+        <p>Bachelor of Science in Information Technology</p> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Me</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <img src="Image (1).jpg" alt="Profile" class="profile-img"> 
+            <div style="text-align: center;">
+                <h2 style="color: #FFB7C5; border-bottom: 3px solid #E1AD01; display: inline-block; padding-bottom: 8px; margin-bottom: 30px;">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <strong style="color: #E1AD01;">HTML5</strong>
+                    <p>Web Structure</p>
+                </div>
+                <div class="skill-item">
+                    <strong style="color: #E1AD01;">CSS3</strong>
+                    <p>Visual Design</p>
+                </div>
+                <div class="skill-item">
+                    <strong style="color: #E1AD01;">UI/UX</strong>
+                    <p>User Experience</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer><p>© 2026 Honey Bench Alcantara | National University</p></footer>
+</body>
+</html>

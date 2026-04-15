@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Honey Bench Alcantara</title> 
+    <style>
+        * { box-sizing: border-box; }
+
+        body { 
+            background-color: #F9F9F9; 
+            font-family: 'Segoe UI', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+            line-height: 1.8; 
+        }
+
+        header { 
+            background-color: #FFB7C5; 
+            color: #fff; 
+            padding: 60px 20px; 
+            text-align: center; 
+            border-bottom: 8px solid #E1AD01; 
+        }
+
+        nav { 
+            background-color: #E1AD01; 
+            padding: 20px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+        }
+
+        /* --- ANIMATED BUTTONS --- */
+        nav a { 
+            text-decoration: none; 
+            color: #fff; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            padding: 12px 24px; 
+            margin: 0 10px;
+            border-radius: 8px; 
+            display: inline-block;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+
+        nav a:hover { 
+            background-color: #FFB7C5; 
+            transform: scale(1.1); 
+            box-shadow: 0 4px 15px rgba(255, 183, 197, 0.4);
+        }
+
+        .active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid #fff;
+        }
+
+        section { 
+            max-width: 850px; 
+            margin: 40px auto; 
+            padding: 45px; 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ddd; 
+        }
+
+        h2 { 
+            color: #FFB7C5; 
+            border-bottom: 2px solid #E1AD01; 
+            display: inline-block; 
+            padding-bottom: 8px; 
+            margin-bottom: 25px; 
+        }
+
+        .highlight-box {
+            background-color: #FFF5F6;
+            padding: 25px;
+            border-left: 5px solid #E1AD01;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 40px; background-color: #FEDCDC; color: #666; }
+    </style>
+</head>
+<body>
+    <header><h1>About Me</h1></header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Me</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Who I Am</h2> 
+            <p>I am <strong>Honey Bench Alcantara</strong>, a 20-year-old student at <strong>National University (NU-Manila)</strong> taking up BSIT-MAA. My focus is on combining technical expertise with digital creativity.</p> 
+            
+            <div class="highlight-box">
+                <p>As a <strong>working student</strong>, I am dedicated to my craft. Beyond my technical projects, I enjoy creating engaging content for platforms like <strong>TikTok</strong>.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>My Hobbies & Interests</h2>
+            <ul>
+                <li><strong>TikTok:</strong> I enjoy creating and engaging with short-form video content to stay updated on digital trends.</li>
+                <li><strong>Volleyball:</strong> Playing for the CCIT Volleyball team keeps me disciplined and active.</li>
+                <li><strong>Animal Lover:</strong> I love spending time with my cats and dogs at home in Meycauayan.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Details</h2> 
+            <p><strong>Email:</strong> alcantarahp@student.national-u.edu.ph</p>
+        </section>
+    </main>
+
+    <footer><p>© 2026 Honey Bench Alcantara | National University</p></footer>
+</body>
+</html>
